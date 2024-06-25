@@ -17,6 +17,7 @@ import Bookingdetails from "./Pages/Bookingdetails/Bookingdetails";
 import Invoice from "./Pages/SettlementandFeedback/Invoice";
 import Protectedroute from "./Pages/ProtectedRoute/Protectedroute";
 import StripepaySuccess from "./Pages/Stripepayment/StripepaySuccess";
+import StripepayFailure from "./Pages/Stripepayment/StripepayFailure";
 
 
 const App = () => {
@@ -57,6 +58,7 @@ const App = () => {
 
           {/* Payment */}
           <Route path="/stripaymentsuccess" element={<StripepaySuccess/>}/>
+          <Route path="/stripaymentfailure" element={<StripepayFailure/>}/>
 
           </Route>
         </Routes>
