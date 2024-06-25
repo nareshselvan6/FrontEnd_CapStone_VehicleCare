@@ -1,0 +1,207 @@
+/* Past service */
+.card-img {
+  max-width: 300px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.content{
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 700px;
+  width: 800px;
+  margin-top: 35px;
+}
+
+.pasttitle{
+  padding-top: 15px;
+  color: white;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+
+
+.servicehistory{
+
+  height: 300px;
+  width: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+
+.servicecard:hover{
+  transform: scale(1.05);
+}
+
+.totalcard {
+  border: none;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pastservice{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasttotalcontent{
+  background-image: url(/images/carcare2.jpg) ;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100% !important;
+}
+
+.pastservicelabel{
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+
+  .card{
+    flex-direction: column;
+  }
+  
+  .content{
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 700px;
+    width: 220px;
+    margin-top: 25px;
+  }
+  .pasttitle{
+    margin-left: 45px;
+  }
+
+}
+
+/* tracking and expense */
+
+.trackandexpense{
+  border: 2px solid white !important;
+  border-radius: 10px;
+  width: 700px !important;
+  height: 700px !important;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.totalcontent{
+  display: flex;
+  justify-content: center;
+
+}
+
+.trackingtable{
+  padding: 10px;
+}
+.table{
+  border-radius: 8px !important;
+}
+
+.tracklabel{
+  color: white;
+}
+
+.trackerrorcolor{
+  color: red;
+  border-radius: 5px;
+  width: 300px;
+  margin-left: 33%;
+  padding: 5px;
+}
+
+.track-title{
+  color: #FEDDAC;
+  
+}
+.blurred-div {
+       
+  background: rgba(255, 255, 255, 0.0); 
+  backdrop-filter: blur(3px); 
+   
+}
+
+.trackingandexpense{
+  background-image: url(/images/trackandexpense.jpg) ;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100% !important;
+  }
+
+.inputbox{
+border: 1px solid #2D3438;
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .trackandexpense{
+    border: 2px solid white !important;
+    border-radius: 10px;
+    width: 400px !important;
+    height: 700px !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+
+ .vehicledetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .vehiclenumber{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+ }
+
+ .dateofbooking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+ }
+ 
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .trackandexpense{
+    border: 2px solid white !important;
+    border-radius: 10px;
+    width: 300px !important;
+    height: 700px !important;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  
+
+}

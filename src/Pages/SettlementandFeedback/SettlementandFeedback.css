@@ -1,0 +1,61 @@
+
+.fullfeedback-page{
+    background-image: url(/images/feedback5.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100% !important;
+    }
+
+    .feedbacklabel{
+        color: white;
+    }
+
+    .totalfeedback{
+        border: 2px solid whitesmoke;
+        border-radius: 15px ;
+        height: 600px;
+        width: 500px;
+        margin: 25px;
+    }
+
+    .label-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .textareabox{
+        width: 300px;
+    }
+
+    .blurred-div {
+       
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(3px); 
+         
+    }
+    .checkedinput{
+        width: 33px !important;
+    }
+
+
+@media only screen and (max-width: 450px) { 
+
+    .totalfeedback{
+        border: 2px solid whitesmoke;
+        border-radius: 15px ;
+        height: 600px;
+        width: 300px;
+      
+    }
+
+.feedback-inputs{
+    width: 200px;
+}
+ 
+   
+
+
+}

@@ -1,0 +1,150 @@
+.totalaccordion{
+    width: 600px;
+}
+
+.accordion-button{
+    width: 570px;
+}
+
+.totalallservices{
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    height: auto;
+    width: 650px;
+
+}
+
+/* search and filter */
+
+
+   .allservices{
+    background-image: url(/images/loginpage.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100% !important;
+    }
+
+    .labelplan{
+        color: white;
+    }
+
+    .plan-label{
+        margin: 5px;
+    }
+
+    .filter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .totalaccordion {
+        margin: 15px;
+    }
+
+    .blurred-div {
+       
+        background: rgba(255, 255, 255, 0.3); 
+        backdrop-filter: blur(3px); 
+         
+    }
+
+    .magnifier-icon{
+
+        display: none;
+
+    }
+
+
+
+@media only screen and (max-width: 760px) {
+
+    .totalallservices{
+        flex-direction: column;
+        border: 2px solid whitesmoke;
+        border-radius: 15px;
+        height: auto;
+        width: 500px;
+    
+    }
+
+    .searchbox{
+        width: 200px;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .filterbox{
+
+        width: 82px;
+
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+
+    .totalallservices{
+        flex-direction: column;
+        border: 2px solid whitesmoke;
+        border-radius: 15px;
+        height: auto;
+        width: 300px;
+    
+    }
+
+    .searchbox{
+        width: 100px;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .totalaccordion{
+        width: 400px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .magnifier-icon{
+        display: block;
+        padding: 4.5px;
+    }
+
+
+}
+
+@media only screen and (max-width: 350px) { 
+    .totalallservices{
+        flex-direction: column;
+        border: 2px solid whitesmoke;
+        border-radius: 15px;
+        height: auto;
+        width: 250px;
+    
+    }
+
+    .searchbox{
+        width: 100px;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .totalaccordion{
+        width: 350px;
+    }
+
+    .filterbox{
+
+        width: 25px;
+        
+    }
+
+}

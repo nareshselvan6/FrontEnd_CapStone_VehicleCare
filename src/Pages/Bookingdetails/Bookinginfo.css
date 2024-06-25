@@ -1,0 +1,180 @@
+/* .inputbox{
+    border: 1px solid black;
+}
+
+/* .bookingimg{
+  background-image: url(images\bookinginfo.jpg) ;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100% !important;
+  } */
+  /* 
+  .align{
+    display: flex;
+    flex-direction: column;
+    }
+    */
+
+    .color{
+        color: aqua;
+        font-weight: bold;
+    }
+    
+    .totalbookingcontent {
+      border: 2px solid white;
+      border-radius: 15px;
+      width: 600px !important;
+      height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.totalcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+
+.mybookingcolsize {
+  width: 400px;
+}
+
+.mybookingfull {
+  border: 2px solid;
+  border-radius: 15px;
+  width: 500px;
+}
+
+.mybookingcard {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.mybookingcard:hover{
+    transform: scale(1.05);
+}
+
+.mybookings {
+  max-width: 800px !important;
+}
+
+.servicehistoryimg {
+  width: 100%;
+}
+
+/* Bookingdetails */
+
+.bookingform {
+  border: 2px solid black;
+}
+
+.bookingdetailstotal{
+  background-image: url(/images/bookingdetails3.jpg);
+  background-size: 100% 100%;
+  height:auto ;
+
+}
+.blurred-div {
+       
+  background: rgba(255, 255, 255, 0.0); 
+  backdrop-filter: blur(3px); 
+   
+}
+
+.bookingdetail{
+  margin-top: 25px;
+}
+
+.BD-labels{
+  color: white;
+}
+
+.BD-title{
+  margin: 25px;
+}
+
+
+@media only screen and (max-width: 520px) {
+
+  .totalbookingcontent {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 300px !important;
+    height: auto;
+display: flex;
+justify-content: center;
+}
+
+.headlabels{
+  margin-left: 55px;
+}
+
+
+.BD-inputs{
+  width: 200px;
+}
+
+.mybookings{
+  width: 300px;
+}
+
+}
+@media only screen and (max-width: 340px) {
+
+ .mybookings{
+  width: 200px;
+ }
+
+
+ } 
+
+@media only screen and (max-width: 250px) {
+
+  .headlabels{
+    margin-left: 40px;
+  }
+
+  .totalbookingcontent {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 240px !important;
+    height: auto;
+display: flex;
+justify-content: center;
+}
+
+.BD-title{
+  margin-left: 100px;
+  
+  
+ }
+
+}
+
+/* my bookings */
+
+.mybooking{
+  background-image: url(/images/mybooking.jpg);
+  background-size: 100% 100%;
+  height:800px ;
+  width: 100%;
+
+}
+
+.mybookinglabel{
+  color: white;
+}
+
+.mybookingfull{
+  margin-top:25px;
+}
+
+
+/* @media only screen and (max-width: 550px) {
+
+  .mybookingcolsize {
+    width: 300px;
+  }
+  
+
+} */
