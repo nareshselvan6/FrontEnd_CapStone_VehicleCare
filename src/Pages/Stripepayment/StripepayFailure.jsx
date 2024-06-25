@@ -9,7 +9,7 @@ const StripepayFailure = () => {
     const navigate=useNavigate();
 
     setTimeout(() => {
-        navigate("/trackexpense")
+        navigate("/track_expenses")
     }, 3000);
     
     return (
