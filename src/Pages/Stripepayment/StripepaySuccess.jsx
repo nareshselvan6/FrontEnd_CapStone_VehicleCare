@@ -5,7 +5,7 @@ const StripepaySuccess = () => {
     const navigate=useNavigate();
 
     setTimeout(() => {
-        navigate("/")
+        navigate("/feedback")
     }, 3000);
     return (
 <div>
