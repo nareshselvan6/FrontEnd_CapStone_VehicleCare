@@ -43,3 +43,49 @@ color: black;
 .textone{
     margin-top: 500px;
 }
+
+@media only screen and (max-width: 1012px) {
+
+    .titlehome{
+        color: white !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-size: 100px;
+        padding: 220px 0 ;
+    }
+    
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .titlehome{
+        color: white !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-size: 80px;
+        padding: 220px 0 ;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+
+    .titlehome{
+        color: white !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-size: 50px;
+        padding: 220px 0 ;
+    }
+    
+}
