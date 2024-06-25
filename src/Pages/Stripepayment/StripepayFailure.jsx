@@ -1,9 +1,17 @@
 import React from 'react';
 
 import "../Stripepayment/Stripe.css"
+import { useNavigate } from 'react-router-dom';
 
 
 const StripepayFailure = () => {
+
+    const navigate=useNavigate();
+
+    setTimeout(() => {
+        navigate("/trackexpense")
+    }, 3000);
+    
     return (
         <div>
                      <div class="row justify-content-center">
