@@ -1,5 +1,5 @@
 import axios from "axios";
-import {bookingRequest,bookingSuccess,bookingFail, checkoutRequest, checkoutSuccess} from "./BookingSlice"
+import {bookingRequest,bookingSuccess,bookingFail, checkoutRequest, checkoutSuccess, checkoutFail} from "./BookingSlice"
 
 
 //! get
@@ -65,7 +65,6 @@ export const postbookings=(value)=>async(dispatch)=>{
             };
             
         const postbookings= await axios.post(`https://backend-capstone-vehiclecare.onrender.com/booking/createbooking`,value,config)
-        console.log(postbookings);
         dispatch(bookingSuccess(postbookings.data));
     } catch (error) {
         dispatch(bookingFail(error.response.data.message));
@@ -85,15 +84,11 @@ export const getbookingsvnobdt=(value)=>async(dispatch)=>{
                 Authorization: `Bearer ${jwttoken}`,
             },
         };
-console.log(config);
 
         const {vehicleno,bookeddate}=value
-        console.log({value});
-        console.log(vehicleno,bookeddate,"bookingactions");
 
         const getbookingsvnobdt = await axios.get(`https://backend-capstone-vehiclecare.onrender.com/booking/getbooking/${vehicleno}/${bookeddate}`,config);
         
-        console.log(getbookingsvnobdt.data);
         dispatch(bookingSuccess(getbookingsvnobdt.data));
     } catch (error) {
         dispatch(bookingFail(error.response.data.message));
@@ -162,8 +157,7 @@ export const postpayment=(value)=>async(dispatch)=>{
                 },
             };
             
-        const postcheckouts= await axios.post(`https://backend-capstone-vehiclecare.onrender.com/payment/stripepayment`,value,config)
-        console.log(postcheckouts);
+        const postcheckouts= await axios.post(`https://backend-capstone-vehiclecare.onrender.com/payment/stripepayment`,{vehiclecost:value.vehiclecost},config)
         dispatch(checkoutSuccess(postcheckouts.data));
     } catch (error) {
         dispatch(checkoutFail(error.response.data.message));

@@ -17,9 +17,7 @@ const TrackAndMonitorExpenses = () => {
 
     const dispatch=useDispatch();
 
-    const {booking,checkout,loading}=useSelector((state)=>state.bookingsState);
-
-  
+    const {booking,checkout,loading}=useSelector((state)=>state.bookingsState);  
     const data={
       vehicleno:"",
       bookeddate:""
