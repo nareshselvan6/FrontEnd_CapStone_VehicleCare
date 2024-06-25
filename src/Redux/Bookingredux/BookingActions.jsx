@@ -157,7 +157,7 @@ export const postpayment=(value)=>async(dispatch)=>{
                 },
             };
             
-        const postcheckouts= await axios.post(`http://localhost:7708/payment/stripepayment`,{vehiclecost:value.vehiclecost},config)
+        const postcheckouts= await axios.post(`https://backend-capstone-vehiclecare.onrender.com/payment/stripepayment`,{vehiclecost:value.vehiclecost},config)
         dispatch(checkoutSuccess(postcheckouts.data));
     } catch (error) {
         dispatch(checkoutFail(error.response.data.message));
