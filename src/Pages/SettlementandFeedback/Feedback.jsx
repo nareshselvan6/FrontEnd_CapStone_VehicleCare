@@ -39,7 +39,6 @@ const Feedback = () => {
     }),
     onSubmit: (values) => {
     
-      console.log(values);
       
       dispatch(postfeedback(values));      
       dispatch(afterfeedbackremainder(values))

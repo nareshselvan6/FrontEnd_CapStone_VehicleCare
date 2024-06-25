@@ -8,7 +8,6 @@ export const getfeedback=async(dispatch)=>{
         dispatch(feedbackRequest());
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -30,7 +29,6 @@ export const getfeedbackbyid=async(dispatch)=>{
         dispatch(feedbackRequest());
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -52,7 +50,6 @@ export const postfeedback=(value)=>async(dispatch)=>{
         dispatch(feedbackRequest());
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -61,7 +58,6 @@ export const postfeedback=(value)=>async(dispatch)=>{
            };
 
         const postfeedback= await axios.post("https://backend-capstone-vehiclecare.onrender.com/feedback/createfeedback",value,config)
-        console.log(postfeedback);
         dispatch(feedbackSuccess(postfeedback))
 
     } catch (error) {
@@ -77,7 +73,6 @@ export const deletefeedback=async(dispatch)=>{
 
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -96,14 +91,12 @@ export const deletefeedback=async(dispatch)=>{
 //! Afterfeedback Remainder
 export const afterfeedbackremainder=(value)=>async(dispatch)=>{
     try {
-        console.log(value.customername,value.email);
 
         dispatch(feedbackRequest());
 
         
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -111,7 +104,6 @@ export const afterfeedbackremainder=(value)=>async(dispatch)=>{
                },
            };
         const afterfeedbackremainderdetails= await axios.put(`https://backend-capstone-vehiclecare.onrender.com/feedback/afterfeedbackremainder`,{email:value.email,customername:value.customername},config);
-        console.log(afterfeedbackremainderdetails);
         dispatch(feedbackSuccess(afterfeedbackremainderdetails.data));
     } catch (error) {
         dispatch(feedbackFail(error.response.data.message));

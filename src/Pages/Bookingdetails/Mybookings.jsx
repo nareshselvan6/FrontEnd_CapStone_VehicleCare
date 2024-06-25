@@ -15,10 +15,8 @@ const Mybookings = () => {
     const {vehicleno,bookeddate}=useParams();
 
     const payload={vehicleno,bookeddate};
-    // console.log(payload);
 
     const {booking,state}=useSelector((state)=>state.bookingsState);
-    // console.log(booking);
 
     useEffect(()=>{
 

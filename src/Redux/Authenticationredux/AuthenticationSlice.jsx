@@ -15,7 +15,6 @@ const authenticationSlice=createSlice({
         
 
         authenticationSuccess(state,action){
-            // console.log(action.payload);
             return{
                 loading:false,
                 authentication:action.payload

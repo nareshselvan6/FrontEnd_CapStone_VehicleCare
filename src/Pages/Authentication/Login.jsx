@@ -17,7 +17,6 @@ const Login = () => {
     (state) => state.authenticationState
   );
 
-  console.log(authentication?.accesstoken);
 
   useEffect(() => {
     if (!authentication) {
@@ -47,7 +46,6 @@ const Login = () => {
     }),
 
     onSubmit: (values) => {
-      console.log("Form data", values);
 
       dispatch(login(values));
       navigate("/allservices");

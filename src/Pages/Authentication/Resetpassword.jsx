@@ -14,7 +14,6 @@ const ResetPassword = () => {
  const {id,token}=useParams();
 
  const paramspayload={id,token}
-//  console.log(paramspayload);
 
   const formik = useFormik({
     initialValues: {
@@ -28,9 +27,7 @@ const ResetPassword = () => {
     }),
 
     onSubmit: (values) => {
-      console.log('Form data', values,id,token);
       const totalvalues={values,id,token}
-      console.log(totalvalues);
 
       dispatch(resetpassword(totalvalues));
       

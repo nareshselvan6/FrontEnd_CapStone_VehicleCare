@@ -19,7 +19,6 @@ const TrackAndMonitorExpenses = () => {
 
     const {booking,checkout,loading}=useSelector((state)=>state.bookingsState);
 
-    // console.log(checkout?.id);
   
     const data={
       vehicleno:"",
@@ -42,7 +41,6 @@ makepay()
 
 
     const handlesubmit=(values)=>{
-        console.log(values);
         setDisplaytable(true)
         dispatch(getbookingsvnobdt(values))
 

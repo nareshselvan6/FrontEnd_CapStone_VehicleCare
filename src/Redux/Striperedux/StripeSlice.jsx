@@ -14,7 +14,6 @@ const StripeSlice = createSlice( {
         },
 
         stripeSuccess(state,action){
-            // console.log(action.payload);
             return{
                 loading:false,
                 booking:action.payload

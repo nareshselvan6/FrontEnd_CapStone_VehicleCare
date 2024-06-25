@@ -11,12 +11,10 @@ const PastService = () => {
 const[displayservice,setDisplayservice]=useState(false);
 const[value,setValue]=useState()
 
-// console.log(value);
 
   const dispatch=useDispatch();
 
     const {booking,state}=useSelector((state)=>state.bookingsState);
-    // console.log(booking?.result?.customername,"pastservice");
 
 
   const data={
@@ -24,7 +22,6 @@ const[value,setValue]=useState()
   }
 
   const handlesubmit=(values)=>{
-    // console.log(values);
     setDisplayservice(true);
     setValue(values);
     dispatch(getpastservice(values));
@@ -85,7 +82,6 @@ const Schema=YUP.object().shape({
         <p className="card-text"><b>VehicleNumber: </b>{ele.vehiclenumber} </p>
         <p className="card-text"><b>Plan: </b>{ele.planid.plantype}</p>
         <p className="card-text"><b>TotalCost: </b>{ele.planid.totalcost}</p>
-        {console.log(ele.planid.plantype)}
       </div>
     </div>
   </div>)

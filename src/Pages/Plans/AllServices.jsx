@@ -54,7 +54,6 @@ if(searchFilter=="pricefilter"){
 
   const handlefilter=(e)=>{
     setsearchFilter(e.target.value)
-    console.log(searchFilter);
 
      if(searchFilter=="priceFilter"){
     dispatch(getPlans)

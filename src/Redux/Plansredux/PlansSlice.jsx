@@ -14,7 +14,6 @@ const planSlice=createSlice({
         },
 
         plansSuccess(state,action){
-            // console.log(action.payload);
             return{
                 loading:false,
                 plans:action.payload

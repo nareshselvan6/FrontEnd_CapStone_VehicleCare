@@ -9,7 +9,6 @@ export const getfinalsettlement=async(dispatch)=>{
 
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -32,7 +31,6 @@ export const getfinalsettlementbyid=async(dispatch)=>{
         dispatch(finalsettlementRequest());
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -54,7 +52,6 @@ export const postfinalsettlement=async(dispatch)=>{
         dispatch(finalsettlementRequest());
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -75,7 +72,6 @@ export const deletefinalsettlement=async(dispatch)=>{
         dispatch(finalsettlementRequest());
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -98,7 +94,6 @@ export const editfinalsettlement=async(dispatch)=>{
         dispatch(finalsettlementRequest());
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {

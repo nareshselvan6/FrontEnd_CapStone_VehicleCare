@@ -11,7 +11,6 @@ import { plansRequest , plansSuccess , plansFail } from "./PlansSlice"
 
 //         const jwttoken=localStorage.getItem("jwt");
 
-//         console.log(jwttoken);
 
 //         const config = {
 //             headers: {
@@ -19,11 +18,9 @@ import { plansRequest , plansSuccess , plansFail } from "./PlansSlice"
 //             },
 //         };
 
-//         console.log(config);
 
 
 //         const getplan = await axios.get("http://localhost:7708/plans/getplans");
-//         console.log(getplan);
 //         dispatch(plansSuccess(getplan.data));
         
 //     } catch (error) {
@@ -69,7 +66,6 @@ export const getPlansbyname=(value)=>async(dispatch)=>{
 
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -78,7 +74,6 @@ export const getPlansbyname=(value)=>async(dispatch)=>{
            };
 
         const getplanbyname = await axios.get(`https://backend-capstone-vehiclecare.onrender.com/plans/getplansbyname/${value}`,config);
-        console.log(getplanbyname);
         dispatch(plansSuccess(getplanbyname.data));
         
     } catch (error) {
@@ -94,17 +89,14 @@ export const getplansbyprice=(value)=>async(dispatch)=>{
 
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
                    Authorization: `Bearer ${jwttoken}`,
                },
            };
-           console.log(value);
 
         const getplanbyname = await axios.get(`https://backend-capstone-vehiclecare.onrender.com/plans/getplansbyprice/${String(value)}`,config);
-        console.log(getplanbyname);
         dispatch(plansSuccess(getplanbyname.data));
         
     } catch (error) {
@@ -121,7 +113,6 @@ export const postPlans=async(dispatch)=>{
 
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -145,7 +136,6 @@ export const editPlans=async(dispatch)=>{
 
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {
@@ -168,7 +158,6 @@ export const deletePlans=async(dispatch)=>{
         dispatch(plansRequest());
            //jwt token configuration
            const jwttoken=localStorage.getItem("jwt");
-           console.log(jwttoken);
 
            const config = {
                headers: {

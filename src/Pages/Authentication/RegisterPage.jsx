@@ -34,7 +34,6 @@ const RegisterPage = () => {
     }),
 
     onSubmit: (values) => {
-      console.log('Form data', values);
 
       dispatch(register(values))
 

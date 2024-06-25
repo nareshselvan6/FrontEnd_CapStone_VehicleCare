@@ -14,7 +14,6 @@ const bookingSlice=createSlice({
         },
 
         bookingSuccess(state,action){
-            // console.log(action.payload);
             return{
                 loading:false,
                 booking:action.payload
@@ -35,7 +34,6 @@ const bookingSlice=createSlice({
         },
 
         checkoutSuccess(state,action){
-            console.log(action.payload,"adsadfa");
             return{
                 loading:false,
                 checkout:action.payload
