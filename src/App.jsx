@@ -23,15 +23,6 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Routes>
-          {/* Home */}
-     
-      </Routes>
-      </BrowserRouter>
-      <BrowserRouter>
-
-      {/* NavBar */}
-       
         
         <Routes>
           {/* Home */}

@@ -16,7 +16,7 @@ export const getbookings=async(dispatch)=>{
                             Authorization: `Bearer ${jwttoken}`,
                         },
                     };
-        const getbookings= await axios.get("http://localhost:7708/booking/allbookings",config)
+        const getbookings= await axios.get("https://backend-capstone-vehiclecare.onrender.com/booking/allbookings",config)
         console.log(getbookings);
         dispatch(bookingSuccess(getbookings.data));
     } catch (error) {
@@ -39,7 +39,7 @@ export const getpastservice=(value)=>async(dispatch)=>{
                     Authorization: `Bearer ${jwttoken}`,
                 },
             };
-        const getpastservice= await axios.get(`http://localhost:7708/booking/getbyvehiclenumber/${value.vehiclenumber}`,config);
+        const getpastservice= await axios.get(`https://backend-capstone-vehiclecare.onrender.com/booking/getbyvehiclenumber/${value.vehiclenumber}`,config);
         console.log(getpastservice);
         dispatch(bookingSuccess(getpastservice.data));
     } catch (error) {
@@ -64,7 +64,7 @@ export const postbookings=(value)=>async(dispatch)=>{
                 },
             };
             
-        const postbookings= await axios.post(`http://localhost:7708/booking/createbooking`,value,config)
+        const postbookings= await axios.post(`https://backend-capstone-vehiclecare.onrender.com/booking/createbooking`,value,config)
         console.log(postbookings);
         dispatch(bookingSuccess(postbookings.data));
     } catch (error) {
@@ -91,7 +91,7 @@ console.log(config);
         console.log({value});
         console.log(vehicleno,bookeddate,"bookingactions");
 
-        const getbookingsvnobdt = await axios.get(`http://localhost:7708/booking/getbooking/${vehicleno}/${bookeddate}`,config);
+        const getbookingsvnobdt = await axios.get(`https://backend-capstone-vehiclecare.onrender.com/booking/getbooking/${vehicleno}/${bookeddate}`,config);
         
         console.log(getbookingsvnobdt.data);
         dispatch(bookingSuccess(getbookingsvnobdt.data));
@@ -115,7 +115,7 @@ export const editbookings=async(dispatch)=>{
                },
            };
 
-        const editbookings = await axios.put("http://localhost:7708/booking/editbooking/:id",config)
+        const editbookings = await axios.put("https://backend-capstone-vehiclecare.onrender.com/booking/editbooking/:id",config)
       
         dispatch(bookingSuccess(editbookings.data));
     } catch (error) {
@@ -138,7 +138,7 @@ export const deletebookings=async(dispatch)=>{
                    Authorization: `Bearer ${jwttoken}`,
                },
            };
-        const deletebookings= await axios.delete("http://localhost:7708/booking/deletebooking/:id",config)
+        const deletebookings= await axios.delete("https://backend-capstone-vehiclecare.onrender.com/booking/deletebooking/:id",config)
         dispatch(bookingSuccess(true,deletebookings));
     } catch (error) {
         dispatch(bookingFail(error.response.data.message));
@@ -162,7 +162,7 @@ export const postpayment=(value)=>async(dispatch)=>{
                 },
             };
             
-        const postcheckouts= await axios.post(`http://localhost:7708/payment/stripepayment`,value,config)
+        const postcheckouts= await axios.post(`https://backend-capstone-vehiclecare.onrender.com/payment/stripepayment`,value,config)
         console.log(postcheckouts);
         dispatch(checkoutSuccess(postcheckouts.data));
     } catch (error) {

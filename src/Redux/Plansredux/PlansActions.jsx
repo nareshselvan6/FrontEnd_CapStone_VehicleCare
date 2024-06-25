@@ -51,7 +51,7 @@ export const getPlans=async(dispatch)=>{
         };
 
 
-        const getplan = await axios.get("http://localhost:7708/plans/getplans",config);
+        const getplan = await axios.get("https://backend-capstone-vehiclecare.onrender.com/plans/getplans",config);
 
         dispatch(plansSuccess(getplan.data));
         
@@ -77,7 +77,7 @@ export const getPlansbyname=(value)=>async(dispatch)=>{
                },
            };
 
-        const getplanbyname = await axios.get(`http://localhost:7708/plans/getplansbyname/${value}`,config);
+        const getplanbyname = await axios.get(`https://backend-capstone-vehiclecare.onrender.com/plans/getplansbyname/${value}`,config);
         console.log(getplanbyname);
         dispatch(plansSuccess(getplanbyname.data));
         
@@ -103,7 +103,7 @@ export const getplansbyprice=(value)=>async(dispatch)=>{
            };
            console.log(value);
 
-        const getplanbyname = await axios.get(`http://localhost:7708/plans/getplansbyprice/${String(value)}`,config);
+        const getplanbyname = await axios.get(`https://backend-capstone-vehiclecare.onrender.com/plans/getplansbyprice/${String(value)}`,config);
         console.log(getplanbyname);
         dispatch(plansSuccess(getplanbyname.data));
         
@@ -129,7 +129,7 @@ export const postPlans=async(dispatch)=>{
                },
            };
 
-        const postPlans = await axios.post("http://localhost:7708/plans/createplan",config);
+        const postPlans = await axios.post("https://backend-capstone-vehiclecare.onrender.com/plans/createplan",config);
         dispatch(plansSuccess(true,postPlans));
         
     } catch (error) {
@@ -153,7 +153,7 @@ export const editPlans=async(dispatch)=>{
                },
            };
 
-        const editPlans = await axios.put("http://localhost:7708/plans/updateplan/:id",config);
+        const editPlans = await axios.put("https://backend-capstone-vehiclecare.onrender.com/plans/updateplan/:id",config);
         dispatch(plansSuccess(true,editPlans));
         
     } catch (error) {
@@ -175,7 +175,7 @@ export const deletePlans=async(dispatch)=>{
                    Authorization: `Bearer ${jwttoken}`,
                },
            };
-        const deletePlans = await axios.delete("http://localhost:7708/plans/deleteplan/:id",config);
+        const deletePlans = await axios.delete("https://backend-capstone-vehiclecare.onrender.com/plans/deleteplan/:id",config);
         dispatch(plansSuccess(true,deletePlans));
         
     } catch (error) {

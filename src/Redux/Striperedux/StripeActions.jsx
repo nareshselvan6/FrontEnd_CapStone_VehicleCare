@@ -14,7 +14,7 @@ export const vehiclepayment=async(dispatch)=>{
     };
     
 
-    const payment= await axios.post(`http://localhost:7708/booking/createbooking`,value,config)
+    const payment= await axios.post(`https://backend-capstone-vehiclecare.onrender.com/booking/createbooking`,value,config)
     console.log(payment);
 
 

@@ -17,7 +17,7 @@ export const getfinalsettlement=async(dispatch)=>{
                },
            };
 
-        const{getfinalsettlement}= await axios.get("http://localhost:7708/settlement/getsettlement",config)
+        const{getfinalsettlement}= await axios.get("https://backend-capstone-vehiclecare.onrender.com/settlement/getsettlement",config)
         dispatch(finalsettlementSuccess(getfinalsettlement))
         
     } catch (error) {
@@ -39,7 +39,7 @@ export const getfinalsettlementbyid=async(dispatch)=>{
                    Authorization: `Bearer ${jwttoken}`,
                },
            };
-        const{getfinalsettlementbyid}= await axios.get("http://localhost:7708/settlement/getsettlementbyid/:id",config)
+        const{getfinalsettlementbyid}= await axios.get("https://backend-capstone-vehiclecare.onrender.com/settlement/getsettlementbyid/:id",config)
         dispatch(finalsettlementSuccess(getfinalsettlementbyid))
 
     } catch (error) {
@@ -61,7 +61,7 @@ export const postfinalsettlement=async(dispatch)=>{
                    Authorization: `Bearer ${jwttoken}`,
                },
            };
-        const{postfinalsettlement}= await axios.post("http://localhost:7708/settlement/finalsettlement",config)
+        const{postfinalsettlement}= await axios.post("https://backend-capstone-vehiclecare.onrender.com/settlement/finalsettlement",config)
         dispatch(finalsettlementSuccess(postfinalsettlement))
 
     } catch (error) {
@@ -82,7 +82,7 @@ export const deletefinalsettlement=async(dispatch)=>{
                    Authorization: `Bearer ${jwttoken}`,
                },
            };
-        const{deletefinalsettlement}= await axios.delete("http://localhost:7708/settlement/deletesettlement/:id",config)
+        const{deletefinalsettlement}= await axios.delete("https://backend-capstone-vehiclecare.onrender.com/settlement/deletesettlement/:id",config)
         dispatch(finalsettlementSuccess(deletefinalsettlement))
         
     } catch (error) {
@@ -105,7 +105,7 @@ export const editfinalsettlement=async(dispatch)=>{
                    Authorization: `Bearer ${jwttoken}`,
                },
            };
-        const{editfinalsettlement}= await axios.put("http://localhost:7708/settlement/editsettlement/:id",config)
+        const{editfinalsettlement}= await axios.put("https://backend-capstone-vehiclecare.onrender.com/settlement/editsettlement/:id",config)
         dispatch(finalsettlementSuccess(editfinalsettlement))
         
     } catch (error) {
