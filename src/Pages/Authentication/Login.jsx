@@ -27,6 +27,7 @@ const Login = () => {
       console.log("token not get");
     } else {
       localStorage.setItem("jwt", authentication?.accesstoken);
+      navigate("/allservices");
    }
   }, [authentication]);
 
@@ -48,7 +49,6 @@ const Login = () => {
     onSubmit: (values) => {
 
       dispatch(login(values));
-      navigate("/allservices");
     },
   });
 

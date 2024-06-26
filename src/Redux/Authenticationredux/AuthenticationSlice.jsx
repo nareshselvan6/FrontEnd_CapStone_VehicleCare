@@ -20,6 +20,12 @@ const authenticationSlice=createSlice({
                 authentication:action.payload
             }
         },
+        authenticationSuccessclear(state,action){
+            return{
+                loading:false,
+                authentication:null
+            }
+        },
 
         authenticationFail(state,action){
             return{

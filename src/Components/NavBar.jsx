@@ -2,16 +2,19 @@ import React from "react";
 import "../Components/Components.css";
 import { Link, useNavigate } from "react-router-dom";
 import tsimg from "../../images/TS.jpg"
+import { useDispatch } from "react-redux";
 
 const NavBar = () => {
 
   const navigate=useNavigate();
+  const dispatch=useDispatch();
 
 const token=localStorage.getItem("jwt")
 
   const logout=()=>{
     localStorage.removeItem("jwt");
-    navigate('/')
+    dispatch(authenticationSuccessclear())
+    navigate('/loginpage')
   }
 
   return (
