@@ -6,6 +6,7 @@ import { ErrorMessage, Field, Form, Formik } from 'formik';
 import * as YUP from 'yup';
 import Footers from '../../Components/Footers';
 import NavBar from '../../Components/NavBar';
+import carimg from "../../../images/carimage1.png"
 
 const PastService = () => {
 const[displayservice,setDisplayservice]=useState(false);
@@ -74,7 +75,7 @@ const Schema=YUP.object().shape({
           return(  <div className="col servicecard  " key={index}>
     <div className="card d-flex ">
         <div className='card-img'>
-      <img src="images\carimage1.png" className="card-img-top" alt="..." />
+      <img src={carimg} className="card-img-top" alt="..." />
       </div>
       <div className="card-body">
         <h5 className="card-title"><b>CustomerName: </b>{ele.customername} </h5>
