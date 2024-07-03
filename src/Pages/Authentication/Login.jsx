@@ -27,6 +27,7 @@ const Login = () => {
       console.log("token not get");
     } else {
       localStorage.setItem("jwt", authentication?.accesstoken);
+      alert("login successfull")
       navigate("/allservices");
    }
   }, [authentication]);

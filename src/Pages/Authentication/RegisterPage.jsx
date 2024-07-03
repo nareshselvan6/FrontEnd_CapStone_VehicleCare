@@ -36,6 +36,7 @@ const RegisterPage = () => {
     onSubmit: (values) => {
 
       dispatch(register(values))
+      alert("register successfull")
 
       navigate("/loginpage");
      
